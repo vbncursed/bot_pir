@@ -31,16 +31,16 @@ Start the bot by running the main.py script:<br>
 
     python main.py
 
-Start a conversation with the bot on Telegram.<br>
-Send a RAR file containing a map file named srtm_25_23.tif.<br>
-The bot will handle the following workflow:<br>
-    Download the RAR file from Telegram.<br>
-    Upload the RAR file to the remote server using SSH.<br>
-    Unpack the RAR file on the remote server.<br>
-    Execute a QGIS script on the remote server to create an export.csv file.<br>
-    Download the export.csv file from the remote server.<br>
-    Send the export.csv file back to the user.<br>
-    Delete the files from the remote server and the local machine.<br>
+1. Start a conversation with the bot on Telegram.<br>
+2. Send a RAR file containing a map file named srtm_25_23.tif.<br>
+3. The bot will handle the following workflow:<br>
+4. Download the RAR file from Telegram.<br>
+5. Upload the RAR file to the remote server using SSH.<br>
+6. Unpack the RAR file on the remote server.<br>
+7. Execute a QGIS script on the remote server to create an export.csv file.<br>
+8. Download the export.csv file from the remote server.<br>
+9. Send the export.csv file back to the user.<br>
+10. Delete the files from the remote server and the local machine.<br>
 
 File Description
 
