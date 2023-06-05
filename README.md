@@ -9,46 +9,38 @@ Before running the code, make sure you have the following:
     Access to a Telegram bot token
     Access to a remote server with SSH credentials
 
-Installation
+Installation<br>
+Clone this repository to your local machine.<br>
 
-    Clone this repository to your local machine.
+    git clone https://github.com/your_username/telegram-file-processing-bot.git
 
-bash
+Install the required dependencies by running the following command:
 
-git clone https://github.com/your_username/telegram-file-processing-bot.git
+    pip install -r requirements.txt
 
-    Install the required dependencies by running the following command:
+Set up the necessary environment variables:<br>
+  TOKEN: Your Telegram bot token<br>
+  HOST_NAME: The hostname or IP address of the remote server<br>
+  USER_NAME: Your username for the remote server<br>
+  PASSWORD: Your password for the remote server<br>
 
-bash
+Usage<br><br>
 
-pip install -r requirements.txt
+To use the Telegram bot, follow these steps:<br>
+Start the bot by running the main.py script:<br>
 
-    Set up the necessary environment variables:
-        TOKEN: Your Telegram bot token
-        HOST_NAME: The hostname or IP address of the remote server
-        USER_NAME: Your username for the remote server
-        PASSWORD: Your password for the remote server
+    python main.py
 
-Usage
-
-To use the Telegram bot, follow these steps:
-
-    Start the bot by running the main.py script:
-
-bash
-
-python main.py
-
-    Start a conversation with the bot on Telegram.
-    Send a RAR file containing a map file named srtm_25_23.tif.
-    The bot will handle the following workflow:
-        Download the RAR file from Telegram.
-        Upload the RAR file to the remote server using SSH.
-        Unpack the RAR file on the remote server.
-        Execute a QGIS script on the remote server to create an export.csv file.
-        Download the export.csv file from the remote server.
-        Send the export.csv file back to the user.
-        Delete the files from the remote server and the local machine.
+Start a conversation with the bot on Telegram.<br>
+Send a RAR file containing a map file named srtm_25_23.tif.<br>
+The bot will handle the following workflow:<br>
+    Download the RAR file from Telegram.<br>
+    Upload the RAR file to the remote server using SSH.<br>
+    Unpack the RAR file on the remote server.<br>
+    Execute a QGIS script on the remote server to create an export.csv file.<br>
+    Download the export.csv file from the remote server.<br>
+    Send the export.csv file back to the user.<br>
+    Delete the files from the remote server and the local machine.<br>
 
 File Description
 
