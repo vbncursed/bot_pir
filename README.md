@@ -1,6 +1,4 @@
-# bot_pir
-
-README
+Telegram Bot for Remote File Processing
 
 This repository contains code for a Telegram bot that handles a specific workflow for processing files on a remote server. The bot allows users to upload a RAR file containing a specific map file, performs several operations on the file on the remote server using SSH, and then provides the processed file back to the user.
 Prerequisites
@@ -14,9 +12,16 @@ Before running the code, make sure you have the following:
 Installation
 
     Clone this repository to your local machine.
+
+bash
+
+git clone https://github.com/your_username/telegram-file-processing-bot.git
+
     Install the required dependencies by running the following command:
 
-    pip install -r requirements.txt
+bash
+
+pip install -r requirements.txt
 
     Set up the necessary environment variables:
         TOKEN: Your Telegram bot token
@@ -30,9 +35,9 @@ To use the Telegram bot, follow these steps:
 
     Start the bot by running the main.py script:
 
-    css
+bash
 
-    python main.py
+python main.py
 
     Start a conversation with the bot on Telegram.
     Send a RAR file containing a map file named srtm_25_23.tif.
